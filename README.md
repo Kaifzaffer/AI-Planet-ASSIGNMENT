@@ -3,16 +3,17 @@
 Welcome to **DPhi**! This application allows users to browse, filter, sort, and search for hackathon challenges. It provides a comprehensive interface for managing and participating in various hackathons.
 
 ## Screenshots
-![Screenshot 1](https://drive.google.com/file/d/1ZlRwC-2WMdo6xNNJqq7_bAVn7Mil1o0i/view?usp=drive_link)
-![Screenshot 2](https://drive.google.com/file/d/1ffEPLxN9AtTxfuQpPnZjPDVjhxOrRWYD/view?usp=drive_link)
-![Screenshot 3](https://drive.google.com/file/d/1fGVUCCsNYPhuWaBryDkt0_41auI0h8EV/view?usp=drive_link)
-![Screenshot 4](https://drive.google.com/file/d/1mlSX1NZs3p58CQF01Laph2bPMzsCEmvV/view?usp=drive_link)
-![Screenshot 5](https://drive.google.com/file/d/1qyh5uECw-KntvohLYJLRIpr561Gnd4VB/view?usp=drive_link)
-![Screenshot 6](https://drive.google.com/file/d/1qyh5uECw-KntvohLYJLRIpr561Gnd4VB/view?usp=drive_link)
-![Screenshot 7](https://drive.google.com/file/d/1ONYlp0xDd0HpJ1dsdBVs-EDU8syUZbNJ/view?usp=drive_link)
-![Screenshot 8](https://drive.google.com/file/d/1MUH3TOKRePiWuYuund6AB7fdLLLjbLZ5/view?usp=drive_link)
-![Screenshot 9](https://drive.google.com/file/d/1fiGPWgzZowNUtH-CjBArDVrNscCqXZUE/view?usp=drive_link)
-![Screenshot 10](https://drive.google.com/file/d/19RrQAVqo1omc7MqKzIItrFx5a_H4dKzM/view?usp=drive_link)
+
+![Screenshot 1](https://drive.google.com/uc?export=view&id=1ZlRwC-2WMdo6xNNJqq7_bAVn7Mil1o0i)
+![Screenshot 2](https://drive.google.com/uc?export=view&id=1ffEPLxN9AtTxfuQpPnZjPDVjhxOrRWYD)
+![Screenshot 3](https://drive.google.com/uc?export=view&id=1fGVUCCsNYPhuWaBryDkt0_41auI0h8EV)
+![Screenshot 4](https://drive.google.com/uc?export=view&id=1mlSX1NZs3p58CQF01Laph2bPMzsCEmvV)
+![Screenshot 5](https://drive.google.com/uc?export=view&id=1qyh5uECw-KntvohLYJLRIpr561Gnd4VB)
+![Screenshot 6](https://drive.google.com/uc?export=view&id=1qyh5uECw-KntvohLYJLRIpr561Gnd4VB)
+![Screenshot 7](https://drive.google.com/uc?export=view&id=1ONYlp0xDd0HpJ1dsdBVs-EDU8syUZbNJ)
+![Screenshot 8](https://drive.google.com/uc?export=view&id=1MUH3TOKRePiWuYuund6AB7fdLLLjbLZ5)
+![Screenshot 9](https://drive.google.com/uc?export=view&id=1fiGPWgzZowNUtH-CjBArDVrNscCqXZUE)
+![Screenshot 10](https://drive.google.com/uc?export=view&id=19RrQAVqo1omc7MqKzIItrFx5a_H4dKzM)
 
 ## Features
 
