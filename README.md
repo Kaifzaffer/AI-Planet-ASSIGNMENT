@@ -104,3 +104,5 @@ Contributions are welcome! If you have suggestions or improvements, please fork 
    ```
 
 5. Create a Pull Request.
+
+## THANK YOU 🙏
