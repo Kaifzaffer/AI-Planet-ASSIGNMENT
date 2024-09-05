@@ -1,6 +1,6 @@
 # DPhi
 
-Welcome to the **Dphi**! This application allows users to browse, filter, sort, and search for hackathon challenges. It provides a comprehensive interface for managing and participating in various hackathons.
+Welcome to **DPhi**! This application allows users to browse, filter, sort, and search for hackathon challenges. It provides a comprehensive interface for managing and participating in various hackathons.
 
 ## Features
 
@@ -27,53 +27,67 @@ To get started with the project, follow these steps:
 
    ```bash
    git clone https://github.com/Kaifzaffer/AI-Planet-ASSIGNMENT.git
-2. Navigate to the Project Directory:
+   ```
 
-bash
-Copy code
-cd vite-project
-3. Install Dependencies:
+2. **Navigate to the Project Directory**:
 
-bash
-Copy code
-npm install
-4. Start the Development Server:
+   ```bash
+   cd vite-project
+   ```
 
-bash
-Copy code
-npm run dev
-Open http://localhost:3000 in your browser to view the application.
+3. **Install Dependencies**:
 
-Usage
-Home Page: Displays a grid of hackathon challenges.
-Search Bar: Enter a name to search for specific hackathons.
-Filters: Use dropdowns to filter by level and status.
-Sorting: Select sorting options to view hackathons in desired order.
-Challenge Details: Click on a challenge to view details, including timers and dates. You can also participate, edit, or delete challenges.
-Folder Structure
+   ```bash
+   npm install
+   ```
+
+4. **Start the Development Server**:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open `http://localhost:3000` in your browser to view the application.
+
+## Usage
+
+- **Home Page**: Displays a grid of hackathon challenges.
+- **Search Bar**: Enter a name to search for specific hackathons.
+- **Filters**: Use dropdowns to filter by level and status.
+- **Sorting**: Select sorting options to view hackathons in the desired order.
+- **Challenge Details**: Click on a challenge to view details, including timers and dates. You can also participate, edit, or delete challenges.
+
+## Folder Structure
+
+```
 src/
-components/: Contains reusable components like Timer.
-pages/: Contains page components like HomeE and ChallengeDetails.
-Context/: Contains the ChallengeProvider context for state management.
-assets/: Stores static assets like images.
-Contributing
+  components/        # Contains reusable components like Timer.
+  pages/             # Contains page components like HomeE and ChallengeDetails.
+  Context/           # Contains the ChallengeProvider context for state management.
+  assets/            # Stores static assets like images.
+```
+
+## Contributing
+
 Contributions are welcome! If you have suggestions or improvements, please fork the repository and create a pull request.
 
-Fork the Repository.
+1. Fork the Repository.
+2. Create a Feature Branch:
 
-Create a Feature Branch:
+   ```bash
+   git checkout -b feature/new-feature
+   ```
 
-bash
-Copy code
-git checkout -b feature/new-feature
-Commit Your Changes:
+3. Commit Your Changes:
 
-bash
-Copy code
-git commit -m 'Add new feature'
-Push to the Branch:
+   ```bash
+   git commit -m 'Add new feature'
+   ```
 
-bash
-Copy code
-git push origin feature/new-feature
-Create a Pull Request.
+4. Push to the Branch:
+
+   ```bash
+   git push origin feature/new-feature
+   ```
+
+5. Create a Pull Request.
