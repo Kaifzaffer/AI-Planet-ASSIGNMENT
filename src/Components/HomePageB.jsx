@@ -1,56 +1,31 @@
-import Ai from "../assets/Ai.svg";
-import datascience from "../assets/datascience.svg";
-import host from "../assets/host.svg";
+import Ai from "../assets/Ai.svg"
+import datascience from "../assets/datascience.svg"
+import host from "../assets/host.svg"
 
-function HomePageB() {
+export default function HomePageB() {
+  const stats = [
+    { icon: Ai, alt: "AI", number: "100K+", text: "AI Model Submissions" },
+    { icon: datascience, alt: "Data Science", number: "50K+", text: "Data Scientists" },
+    { icon: host, alt: "AI Challenges", number: "100+", text: "AI Challenges Hosted" },
+  ]
+
   return (
-    <div
-      className="flex items-center justify-center w-full max-w-[1442px] h-[200px] bg-[#003145] relative overflow-x-hidden"
-      style={{
-        left: "-1px",
-        gap: "0px",
-        opacity: "0px",
-      }}
-    >
-      <div
-        className="flex justify-around w-[1075px] h-[55px] text-white items-center"
-        style={{
-          top: "701px",
-          left: "183px",
-          gap: "0px",
-          opacity: "0px",
-        }}
-      >
-        <div className="flex items-center">
-          <div>
-            <img src={Ai} alt="Ai" />
-          </div>
-          <div className="ml-4">
-            <div className="text-xl font-semibold">100K+</div>
-            <div className="text-sm">AI Model Submission</div>
-          </div>
-        </div>
-        <div className="flex items-center">
-          <div>
-            <img src={datascience} alt="Ai" />
-          </div>
-          <div className="ml-4">
-            <div className="text-xl font-semibold">50K+</div>
-            <div className="text-sm">Data Scientist</div>
-          </div>
-        </div>
-        <div className="flex items-center">
-          <div>
-            <img src={host} alt="Ai" />
-          </div>
-          <div className="ml-4">
-            <div className="text-xl font-semibold">100+</div>
-            <div className="text-sm">AI Challenges hosted</div>
-          </div>
+    <div className="flex items-center justify-center w-full max-w-[1442px] bg-[#003145] py-8 px-4 sm:px-6 md:px-8 lg:px-10 overflow-hidden">
+      <div className="w-full max-w-[1075px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-white">
+          {stats.map((stat, index) => (
+            <div key={index} className="flex items-center justify-center sm:justify-start">
+              <div className="flex-shrink-0">
+                <img src={stat.icon} alt={stat.alt} className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16" />
+              </div>
+              <div className="ml-4">
+                <div className="text-lg sm:text-xl md:text-2xl font-semibold">{stat.number}</div>
+                <div className="text-xs sm:text-sm md:text-base">{stat.text}</div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  );
+  )
 }
-
-export default HomePageB;
