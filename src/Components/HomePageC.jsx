@@ -1,7 +1,7 @@
 import notebook from "../assets/notebook.svg"
 import Vector from "../assets/Vector.svg"
 import Robot from "../assets/Robot.svg"
-import identificationCard from "../assets/identificationCard.svg"
+import identificationCard from "../assets/IdentificationCard.svg"
 
 export default function HomePageC() {
   const challenges = [
