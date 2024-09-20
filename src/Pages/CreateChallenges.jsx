@@ -1,5 +1,7 @@
 import { useState, useContext } from "react";
 import { ChallengeContext } from "../Context/challengeProvider";
+import { useNavigate } from "react-router-dom";
+
 
 function CreateChallenges() {
   const [challengeName, setChallengeName] = useState("");
@@ -10,6 +12,8 @@ function CreateChallenges() {
   const [imageFile, setImageFile] = useState(null);
   const [selectedLevel, setSelectedLevel] = useState("Easy");
   const { addChallenge } = useContext(ChallengeContext);
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ challengeName, startDate, endDate });
@@ -52,6 +56,8 @@ function CreateChallenges() {
     addChallenge(challengeData);
 
     console.log("Saved Challenge Data:", challengeData);
+
+    navigate("/");
   };
 
   return (

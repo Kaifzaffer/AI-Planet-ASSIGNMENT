@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { TextField, InputAdornment, Button, Menu, MenuItem } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { ChallengeContext } from "../Context/challengeProvider";
@@ -10,7 +10,7 @@ function HomeD() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedStatus, setSelectedStatus] = useState('');
   const [selectedLevel, setSelectedLevel] = useState('');
-  const { challenges } = useContext(ChallengeContext);
+  const { challenges, setFilteredChallenges } = useContext(ChallengeContext);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -44,14 +44,18 @@ function HomeD() {
     handleClose();
   };
 
-  const filteredChallenges = challenges
-    .filter(challenge => 
-      challenge.challengeName.toLowerCase().includes(searchQuery.toLowerCase())
-    )
-    .filter(challenge => 
-      (selectedStatus === '' || challenge.status === selectedStatus) &&
-      (selectedLevel === '' || challenge.level === selectedLevel)
-    );
+  // Use useEffect to update filteredChallenges in context whenever filters change
+  useEffect(() => {
+    const filteredChallenges = challenges
+      .filter(challenge => 
+        challenge.challengeName.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+      .filter(challenge => 
+        (selectedStatus === '' || challenge.status === selectedStatus) &&
+        (selectedLevel === '' || challenge.level === selectedLevel)
+      );
+    setFilteredChallenges(filteredChallenges);
+  }, [searchQuery, selectedStatus, selectedLevel, challenges, setFilteredChallenges]);
 
   return (
     <div className="w-full max-w-[1442px] h-[184px] bg-[#003145] flex justify-center overflow-x-hidden">

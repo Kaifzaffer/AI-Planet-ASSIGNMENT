@@ -4,7 +4,7 @@ import { ChallengeContext } from "../Context/challengeProvider";
 import Timer from "../Components/Timer";
 
 function HomeE() {
-  const { challenges } = useContext(ChallengeContext);
+  const { filteredChallenges } = useContext(ChallengeContext);
   const navigate = useNavigate();
 
   const handleParticipateClick = (challenge) => {
@@ -14,7 +14,7 @@ function HomeE() {
   return (
     <div className="w-full max-w-[1442px] h-[1196px] bg-[#003145] p-8">
       <div className="grid grid-cols-3 gap-8">
-        {challenges.map((challenge) => (
+        {filteredChallenges.map((challenge) => (
           <div
             key={challenge.id} 
             className="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center"
