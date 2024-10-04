@@ -1,4 +1,4 @@
-# DPhi
+# HackathonList
 
 Welcome to **DPhi**! This application allows users to browse, filter, sort, and search for hackathon challenges. It provides a comprehensive interface for managing and participating in various hackathons.
 
